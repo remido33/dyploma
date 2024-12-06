@@ -1,0 +1,25 @@
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: var(--gray-100);
+    min-height: 240px;
+    border-radius: 8px;
+    height: 100%;
+    padding: 0 15px;
+    line-height: 20px;
+}
+
+.wrapper img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+}
+
+.wrapper a {
+    border-bottom: 1px solid var(--dark);
+}

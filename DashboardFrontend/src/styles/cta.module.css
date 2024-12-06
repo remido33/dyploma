@@ -1,0 +1,62 @@
+
+.cta {
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cta[disabled] {
+    cursor: not-allowed;
+}
+
+.blackCta[disabled] {
+    background: var(--gray-600);
+}
+
+.whiteCta[disabled] {
+    background: var(--gray-300);
+}
+
+.transparentCta[disabled] {
+    background: var(--gray-200);
+}
+
+.blackCta {
+    background: var(--dark);
+    color: var(--gray-100);
+}
+
+.blackCta:hover {
+    background: var(--gray-600);
+    border-color: var(--gray-600);
+}
+
+.whiteCta {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.whiteCta:hover {
+    background: var(--gray-300);
+}
+
+.deleteCta {
+    color: var(--light);
+    background: var(--red-100);
+    border: 1px solid var(--red-100);
+}
+
+.deleteCta:hover {
+    background: var(--red-200);
+    border-color: var(--red-200);
+}
+
+.transparentCta {
+    background: transparent;
+    border: 1px solid var(--gray-300);;
+}
+
+.transparentCta:hover {
+    background-color: var(--gray-300);
+}

@@ -1,0 +1,57 @@
+.stackWrapper {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+
+.wrapper {
+    padding: 14px 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.2s ease-in-out, fadeOut 0.2s 2.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+}
+
+.wrapper span {
+    font-size: 15px;
+    color: var(--light);
+    font-family: var(--font-inter);
+    line-height: 15px;
+    margin-right: 32px;
+    font-weight: 300;
+}
+
+.closeBtn {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.closeBtn:hover {
+    background: rgba(0, 0, 0, .15);
+}

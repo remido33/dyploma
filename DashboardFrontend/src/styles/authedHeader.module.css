@@ -1,0 +1,177 @@
+.wrapper, .placeholder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light);
+    box-shadow: 0 0 0 100vmax var(--light);
+    clip-path: inset(0 -100vmax);
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.wrapper::before, .placeholder::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--gray-200);
+    box-shadow: 0 0 0 100vmax var(--gray-200);
+    clip-path: inset(0 -100vmax);
+}
+
+.placeholder {
+    padding: 0 0;
+    height: 75px;
+}
+
+.wrapper nav ul {
+    display: flex;
+    margin-left: -16px;
+}
+
+.wrapper nav {
+    padding-bottom: 8px;
+}
+
+/* 
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+*/
+
+.link {
+    position: relative;
+    padding: 8px 16px;
+    transition: var(--transition);
+    color: var(--gray-600);
+    border-radius: 4px;
+}
+
+.link:hover {
+    background: var(--gray-200);
+    color: var(--dark);
+    border-radius: 4px;
+}
+
+.link[data-active="true"] {
+    color: var(--dark);
+}
+
+.link[data-active="true"]::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    border-radius: 16px;
+    width: 100%;
+    background-color: var(--gray-600);
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account .user {
+    cursor: pointer;
+    background-color: var(--gray-200);
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+.selector:hover {
+    cursor: pointer;
+}
+
+.selector:hover .name, .selector:hover .arrows  {
+    transition: var(--transition);
+}
+
+.selector:hover .name {
+    color: var(--gray-600);
+}
+
+.selector:hover .arrows {
+    background: var(--gray-200);
+}
+
+.selector .name {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.selector .arrows {
+    width: 20px;
+    height: 24px;
+    border-radius: 50px;
+}
+
+.modal input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 19px;
+    padding: 8px 24px 16px;
+}
+
+.modal input::placeholder {
+    color: var(--gray-400);
+}
+
+.modal ul {
+    min-height: 300px;
+    max-height: 300px;
+    margin-top: 16px;
+    padding: 0 12px 8px;
+    overflow-y: scroll;
+}
+
+.modal li {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    height: 46px;
+    padding: 0 8px;
+    transition: var(--transition);
+}
+
+.modal .noResults {
+    margin-top: 14px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.modal li:hover {
+    background: var(--gray-200);
+    cursor: pointer;
+}
+
+.modal li span {
+    font-size: 14px;
+    margin-left: 12px;
+    color: var(--dark);
+}
+
+.modal .accountLogo {
+    width: 18px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 700px) {
+    .account .user {
+        display: none;
+    }
+}

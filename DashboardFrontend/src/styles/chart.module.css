@@ -1,0 +1,137 @@
+
+.wrapper {
+    max-width: 960px;
+    background: var(--light);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+}
+
+.header {
+    padding: 24px 16px 20px 24px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.subtitle {
+    margin-top: 4px;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: var(--gray-600);
+    font-weight: 400;
+}
+
+.body {
+    padding: 20px 24px 16px;
+}
+
+.indicators {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.indicators .indicator {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.indicators .circle {
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+}
+
+.tooltip > div {
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 4px;
+}
+
+.tooltip li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 12px;
+}
+
+.tooltip ul {
+    padding: 6px 0 8px;
+}
+
+.tooltip span {
+    font-family: var(--font-mulish);
+    color: #fff;
+    font-size: 12px;
+}
+
+.tooltip svg {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip svg path {
+    fill: rgba(0, 0, 0, .8);;
+}
+
+.chart {
+    position: relative;
+    max-width: 100%;
+}
+
+.canvas {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.footer {
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    margin-top: 8px;
+    width: 150px;
+}
+
+.footer ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.footer ul li span {
+    color: var(--gray-400);
+    font-size: 13px;
+}
+
+.footer ul li b  {
+    font-family: var(--font-mulish);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.footerTitle {
+    align-self: end;
+    color: var(--gray-600);
+    height: 28px;
+    font-size: 13px;
+}
+
+.footerTitle:hover {
+    color: var(--dark);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+@media screen and (max-width: 700px) {
+    .body {
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+
+.wrapper {
+    max-width: 1240px;
+    margin: auto auto 0;
+    padding: 100px 0 16px;
+    text-align: center;
+}
+
+.wrapper a {
+    margin-right: 24px;
+}
+
+.wrapper a:last-child {
+    margin-right: 0;
+}

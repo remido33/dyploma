@@ -1,0 +1,27 @@
+
+.pageName {
+    position: relative;
+    background: var(--light);
+    box-shadow: 0 0 0 100vmax var(--light);
+    clip-path: inset(0 -100vmax);
+    text-transform: capitalize;
+    padding: 48px 0 32px 0;
+}
+
+.pageName::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--gray-200);
+    box-shadow: 0 0 0 100vmax var(--gray-200);
+    clip-path: inset(0 -100vmax);
+}
+
+.pageName p {
+    font-size: 15px;
+    text-transform: none;
+    color: var(--gray-600);
+    margin-top: 12px;
+}

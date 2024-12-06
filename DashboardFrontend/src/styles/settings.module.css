@@ -1,0 +1,16 @@
+
+.wrapper section {
+    margin-top: 32px;
+}
+
+.wrapper section {
+    max-width: 800px;
+    background: var(--light);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    padding: 24px 24px 30px;
+}
+
+.wrapper p {
+    margin-bottom: 16px;
+}

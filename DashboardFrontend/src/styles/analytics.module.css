@@ -1,0 +1,51 @@
+
+.wrapper section {
+    margin-top: 32px;
+}
+
+.chart, .row {
+    margin-top: 24px;
+}
+
+.row {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+.calendar {
+    display:  flex;
+    justify-content: flex-end;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background: var(--gray-100);
+    display: flex;
+}
+
+.calendar::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--gray-200);
+    box-shadow: 0 0 0 100vmax var(--gray-200);
+    clip-path: inset(0 -100vmax);
+}
+
+.calendar > div {
+    margin: 24px 0;
+}
+
+.calendar + section {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}

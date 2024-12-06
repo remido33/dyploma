@@ -1,0 +1,15 @@
+
+.wrapper {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin: 20vh auto 0;
+    text-align: center;
+}
+
+.wrapper p {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,69 @@
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper.withLabel::before {
+    content: '';
+    display: block;
+    height: 16px;
+}
+
+.wrapper label {
+    text-transform: capitalize;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    font-size: 12px;
+    margin-left: 1px;
+    transition: var(--transition);
+}
+
+.wrapper label[hidden] {
+    display: block;
+    opacity: 0;
+}
+
+.wrapper input {
+    border-radius: 4px;
+    max-width: 100%;
+    border: 1px solid var(--gray-300);
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+    font-size: 14px;
+    width: 240px;
+}
+
+.wrapper input:focus {
+    border-color: var(--gray-600);
+}
+
+.ctas {
+    display: flex;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.ctas button {
+    margin-left: 12px;
+    width: fit-content;
+}
+
+.error {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    color: var(--red-100);
+    left: 0;
+}
+
+@media screen and (max-width: 390px) {
+    .wrapper input {
+        max-width: 100%;
+        width: 190px;
+    }
+}

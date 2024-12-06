@@ -1,0 +1,95 @@
+
+.wrapper {
+    background: var(--light);
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.wrapper ul {
+    flex: 1;
+}
+
+.wrapper li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.wrapper a:hover span {
+    cursor: pointer;
+    color: var(--blue-100);
+    text-decoration: underline;
+}
+
+.wrapper li a {
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.valueLabel {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--gray-500);
+    align-items: center;
+}
+
+.footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: -4px;
+    color: var(--gray-500);
+}
+
+.footer button {
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 20px;
+}
+
+.modalHeader span {
+    color: var(--gray-400);
+}
+
+.modal {
+    padding: 8px 32px 24px;
+}
+
+.modal li {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .modal {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

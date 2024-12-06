@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-family: var(--font-inter);
+}
+
+.wrapper nav {
+    position: relative;
+}
+
+.wrapper nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.login, .link  {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.link {
+    min-width: 80px;
+    color: var(--gray-500);
+}
+
+.link:hover {
+    color: var(--dark);
+}
+
+.link[data-active="true"] {
+    color: var(--dark);
+}
+
+.login:hover, .link:hover {
+    background-color: var(--gray-200);
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+}
